@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     <!--box-icon links-->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        body{
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220112/pngtree-glass-morphim-effect-registration-banner-with-gradient-blue-image_934693.jpg");
+            background-size:cover;
+            text-align: center;
+        }
+        .logo{
+          color: blueviolet;
+          font-weight: bold;
+          line-height: 1.8;
+        }
+        .navs{
+          margin-left: 380px;
+        }
+        .nav-item{
+            padding: 0 12px;
+            font-weight: bold;
+        }
+        .signUp-form{
+            padding: 3% 2%;
+            margin: 0 auto 0 auto;
+            width: 400px;
+            height: 500px;
+            top: 25px;
+            right: 10px;
+            position: relative;
+            border: 2px solid #ccc;
+            border-radius: 10%;
+            font-size: 1.1rem;
+            background-color: #97d9eb;
+        }
+        .btn{
+          margin-top: 20px;
+            width:100px;
+            height: 35px;
+            background-color: blueviolet;
+        }
+        #footer{
+          margin-top: 50px;
+          background-color: rgb(159, 114, 201);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span class="logo">PMS for you</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navs" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signUp.html">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signIn.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </div>
+        </div>
+      </nav>
+    <div class="signup-section">
+      <h1>Create an account here</h1>
+      <form class="signUp-form" action="/signup" method="POST">
+          <div class="form-inputs">
+              <label for="fname" class="form-label">First name</label>
+              <input placeholder="First name" type="text" name="fname" class="form-control" required>
+          </div>
+          <div class="form-inputs">
+              <label for="lname" class="form-label">Last name</label>
+              <input placeholder="Last name" type="text" name="lname" class="form-control" required>
+          </div>
+          <div class="form-inputs">
+              <label for="email" class="form-label">Email</label>
+              <input placeholder="Email" type="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-inputs">
+              <label for="password" class="form-label">Password</label>
+              <input placeholder="Password" type="password" name="password" class="form-control" required>
+          </div>
+          <div class="form-inputs">
+              <label for="confirm-password" class="form-label">Confirm password</label>
+              <input placeholder="Confirm password" type="password" name="confirmPassword" class="form-control" required>
+          </div>
+          <button class="btn" type="Submit">Sign Up</button>
+      </form>
+    </div>
+    <div id="footer">
+      <h3>Developer contact information</h3>
+      <a href="mailto:hawitulu71@gmail.com"><i class="bx bxl-gmail bx-md"></i></a>
+      <a href="https://github.com/hawiti"><i class="bx bxl-github bx-md"></i></a>
+      <a href="https://www.linkedin.com/in/hawi-tulu-225750273/"><i class="bx bxl-linkedin bx-md"></i></a>
+      <p style="font-size: 1rem; padding:20px 0;">&#169 Copyright 2023</p>
+
+  </div>
+</body>
+</html>
